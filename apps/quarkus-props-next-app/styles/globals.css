@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root, .light {
+    --foreground-rgb: 0, 0, 0;
+    --background-rgb: 255, 255, 255;
+    --background-subtle-rgb: 241, 241, 241;
+  }
+
+  .dark {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 0, 0, 0;
+    --background-subtle-rgb: 50, 50, 50;
+  }
+
+  body, .dark, .light {
+    color: rgb(var(--foreground-rgb));
+    background: rgb(var(--background-rgb));
+  }
+  
+  input, select {
+    color: inherit;
+    background-color: inherit;
+    border-style: solid;
+    border-color: rgb(var(--foreground-rgb));
+    border-width: .15rem;
+  }
+
+  code {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    background-color: rgb(var(--background-subtle-rgb));
+  }
+
+  ul {
+    list-style: outside;
+    padding: .2rem 0 .2rem 3rem;
+  }
+}
+

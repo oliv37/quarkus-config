@@ -1,0 +1,6 @@
+- links with #
+- multi repo => 1 folder packages/\*
+- start transition (when switching quarkus version)
+- reponsive web design
+- robot.txt (only index homepage)
+- favicon
