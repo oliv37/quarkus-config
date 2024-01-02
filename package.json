@@ -1,4 +1,7 @@
 {
-  "name": "quarkus-props",
-  "private": true
+  "name": "quarkus-config",
+  "private": true,
+  "devDependencies": {
+    "typescript": "^5"
+  }
 }

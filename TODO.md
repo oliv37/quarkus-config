@@ -1,5 +1,5 @@
 - links with #
-- multi repo => 1 folder packages/\*
+- style links description
 - start transition (when switching quarkus version)
 - reponsive web design
 - robot.txt (only index homepage)

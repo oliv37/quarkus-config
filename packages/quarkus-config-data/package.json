@@ -1,0 +1,14 @@
+{
+  "name": "quarkus-config-data",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsx index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "node-html-parser": "^6.1.11",
+    "tsx": "^4.7.0",
+    "typescript": "^5"
+  }
+}
