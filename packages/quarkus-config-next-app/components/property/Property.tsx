@@ -1,16 +1,17 @@
 import { IProperty } from "quarkus-config-types";
-import PropertyTitle from "./PropertyTitle";
+import PropertyHeader from "./PropertyHeader";
 import PropertyFooter from "./PropertyFooter";
+import PropertyDescription from "./PropertyDescription";
 
 interface Props {
   property: IProperty;
 }
 
-export default function ({ property }: Props) {
+export default function Property({ property }: Props) {
   return (
-    <div className="pb-8">
-      <PropertyTitle property={property} />
-      <div dangerouslySetInnerHTML={{ __html: property.description }} />
+    <div id={property.id} className="pb-8">
+      <PropertyHeader property={property} />
+      <PropertyDescription property={property} />
       <PropertyFooter property={property} />
     </div>
   );

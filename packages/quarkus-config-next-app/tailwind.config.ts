@@ -10,12 +10,9 @@ const config: Config = {
     extend: {
       colors: {
         foreground: "rgb(var(--foreground-rgb))",
+        "foreground-subtle": "rgb(var(--foreground-subtle-rgb))",
         background: "rgb(var(--background-rgb))",
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "background-subtle": "rgb(var(--background-subtle-rgb))",
       },
     },
   },

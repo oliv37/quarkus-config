@@ -2,7 +2,7 @@ import { parse } from "node-html-parser";
 import { readQuarkusVersions } from "./read-quarkus-versions";
 import tableRowsReducer from "../reducer/table-rows-reducer";
 import versionIdToUrl from "../mapper/version-id-to-url";
-import { ICategory, IProperty, IVersion } from "quarkus-config-types";
+import { ICategory, IVersion } from "quarkus-config-types";
 
 export async function readAllQuarkusProperties() {
   const versions = await readQuarkusVersions();

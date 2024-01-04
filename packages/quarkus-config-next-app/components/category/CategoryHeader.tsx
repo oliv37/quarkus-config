@@ -5,7 +5,7 @@ interface Props {
   category: ICategory;
 }
 
-export default function CategoryTitle({ category }: Props) {
+export default function CategoryHeader({ category }: Props) {
   return (
     <a href={`#${category.id}`}>
       <p

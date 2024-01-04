@@ -9,7 +9,7 @@ interface Props {
 export default function Main({ version }: Props) {
   const categories = getCategories(version);
   return (
-    <main className="px-10 pb-10">
+    <main className="px-10 pt-10">
       <Categories categories={categories} />
       <UpButton />
     </main>

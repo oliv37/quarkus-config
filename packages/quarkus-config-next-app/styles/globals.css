@@ -3,14 +3,20 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-pt-12;
+  }
+
   :root, .light {
     --foreground-rgb: 0, 0, 0;
+    --foreground-subtle-rgb: 50, 50, 50;
     --background-rgb: 255, 255, 255;
     --background-subtle-rgb: 241, 241, 241;
   }
 
   .dark {
     --foreground-rgb: 255, 255, 255;
+    --foreground-subtle-rgb: 205, 205, 205;
     --background-rgb: 0, 0, 0;
     --background-subtle-rgb: 50, 50, 50;
   }
@@ -37,6 +43,11 @@
   ul {
     list-style: outside;
     padding: .2rem 0 .2rem 3rem;
+  }
+
+  .description a {
+    font-style: italic;
+    color: rgb(var(--foreground-subtle-rgb));
   }
 }
 
