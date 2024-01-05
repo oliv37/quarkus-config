@@ -15,7 +15,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
           <Header />
           {props.children}
         </AppProvider>
-        <script src={`/theme.js?v=${time}`} />
+        <script src={`/theme.js?v=${time}`} async />
       </body>
     </html>
   );

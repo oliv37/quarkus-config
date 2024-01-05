@@ -5,13 +5,9 @@ interface Props {
 }
 
 export default function PropertyHeader({ property }: Props) {
-  return (
-    <a href={`#${property.id}`}>
-      {property.names.map((name: string) => (
-        <p key={name} className="font-bold pb-1">
-          {name}
-        </p>
-      ))}
-    </a>
-  );
+  return property.names.map((name: string) => (
+    <div key={name} className="font-bold pb-1">
+      <a href={`#${property.id}`}>{name}</a>
+    </div>
+  ));
 }

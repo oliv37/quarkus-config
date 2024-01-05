@@ -2,7 +2,7 @@ import clsx from "@/utils/clsx";
 import getVersions from "@/utils/getVersions";
 import ThemeButton from "@/components/shared/buttons/ThemeButton";
 import SearchField from "@/components/shared/fields/SearchField";
-import Link from "next/link";
+import HomeLink from "@/components/shared/links/HomeLink";
 import VersionsField from "@/components/shared/fields/VersionsField";
 
 export default function Header() {
@@ -17,9 +17,7 @@ export default function Header() {
       )}
     >
       <div className="flex space-x-1">
-        <Link href="/">
-          <h1 className="font-bold text-xl">Quarkus</h1>
-        </Link>
+        <HomeLink />
         <VersionsField versions={versions} />
       </div>
       <div className="flex items-center space-x-2">

@@ -1,6 +1,6 @@
-- links with #
-- style links description
-- start transition (when switching quarkus version)
+- declare lock icon with symbol / use
 - reponsive web design
 - robot.txt (only index homepage)
 - favicon
+- github action
+- eslint / prettier

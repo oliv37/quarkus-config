@@ -6,9 +6,11 @@ import { writeVersions } from "./write/write-versions";
 
 async function main() {
   cleanData();
+  console.log("Generating Quarkus versions file");
   const versions = await readQuarkusVersions();
   writeVersions(versions);
   for (let version of versions) {
+    console.log("Generating Quarkus properties " + version.id + " file");
     const quarkusProperties = await readQuarkusProperties(version);
     writeQuarkusProperties(version, quarkusProperties);
   }

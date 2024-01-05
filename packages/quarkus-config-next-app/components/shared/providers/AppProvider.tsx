@@ -2,6 +2,7 @@
 
 import QueryProvider from "./QueryProvider";
 import ThemeProvider from "./ThemeProvider";
+import NavigationTransitionProvider from "./NavigationTransitionProvider";
 
 export default function AppProvider({
   children,
@@ -10,7 +11,9 @@ export default function AppProvider({
 }) {
   return (
     <ThemeProvider>
-      <QueryProvider>{children}</QueryProvider>
+      <NavigationTransitionProvider>
+        <QueryProvider>{children}</QueryProvider>
+      </NavigationTransitionProvider>
     </ThemeProvider>
   );
 }
