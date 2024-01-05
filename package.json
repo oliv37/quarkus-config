@@ -1,7 +1,27 @@
 {
   "name": "quarkus-config",
   "private": true,
+  "scripts": {
+    "dev": "pnpm --filter quarkus-config-next-app run dev",
+    "build-app": "pnpm --filter quarkus-config-next-app run build",
+    "build-data": "pnpm --filter quarkus-config-data run build"
+  },
+  "dependencies": {
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
   "devDependencies": {
-    "typescript": "^5"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5",
+    "node-html-parser": "^6.1.11",
+    "tsx": "^4.7.0"
   }
 }
