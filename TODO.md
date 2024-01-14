@@ -1,6 +1,6 @@
-- declare lock icon with symbol / use
-- reponsive web design
-- robot.txt (only index homepage)
+- declare lock icon with symbol / use (improve switch theme mode)
 - favicon
+- robot.txt (only index homepage)
+- reponsive web design
 - github action
 - eslint / prettier

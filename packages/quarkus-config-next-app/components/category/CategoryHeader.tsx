@@ -11,7 +11,7 @@ export default function CategoryHeader({ category }: Props) {
       <p
         className={clsx(
           "inline-block px-2 py-1 mb-4",
-          "font-bold text-background bg-foreground"
+          "font-bold border-4 border-solid border-foreground"
         )}
       >
         {category.name}
