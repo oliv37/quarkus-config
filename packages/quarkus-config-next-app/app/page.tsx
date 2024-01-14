@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Main from "./Main";
 
 export const metadata: Metadata = {
-  title: "All configuration properties - Quarkus",
+  title: "Quarkus configuration properties",
   description: "Quarkus: Supersonic Subatomic Java",
 };
 

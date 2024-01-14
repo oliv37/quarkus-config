@@ -25,7 +25,7 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: Props): Metadata {
   return {
-    title: `All configuration properties - ${params.version} - Quarkus`,
+    title: `Quarkus configuration properties - ${params.version}`,
     description: "Quarkus: Supersonic Subatomic Java",
   };
 }

@@ -16,7 +16,7 @@ export default function Header() {
         "z-50"
       )}
     >
-      <div className="flex space-x-1">
+      <div className="flex space-x-2">
         <HomeLink />
         <VersionsField versions={versions} />
       </div>
